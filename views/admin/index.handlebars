@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-md-12 ml-3">
+        <h1 class="mb-3">Welcome, {{ user.fullname }}</h1>
+        <h3>Referral Link : <a href="{{ generatedRefLink }}">{{ generatedRefLink }}</a></h3>
+
+    </div>
+</div>
+<div class="row mt-4">
+    <div class="col-md-3 ml-3">Total Balance is {{user.balance}}</div>
+    <div class="col-md-3 ">
+        <form action="/api/referral/expire" method="post">
+        <button type="submit" class="btn btn-danger">Expire Referral Link</button>
+        </form>
+    </div>
+    <div class="col-md-3 ">
+        <form action="/api/referral/verify" method="post">
+        <button type="submit" class="btn btn-primary">Verify Referral Link</button>
+        </form>
+    </div>
+</div>
