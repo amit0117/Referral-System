@@ -8,7 +8,7 @@ This is a simple referral system that makes use of Nodejs to implement a referra
 - MongoDB
 - Express-Handlebars
 - Passport
-- jwt
+- joi
 - bcryptjs
 - bootstrap
   
