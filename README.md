@@ -1,7 +1,6 @@
 # Referral System
 
 This is a simple referral system that makes use of Nodejs to implement a referral system logic.
-Let's connect on [Twitter](https://twitter.com/geekyahmed) and [Github](https://github.com/geekyahmed)
 
 # Technologies Used
 
@@ -9,6 +8,10 @@ Let's connect on [Twitter](https://twitter.com/geekyahmed) and [Github](https://
 - MongoDB
 - Express-Handlebars
 - Passport
+- jwt
+- bcryptjs
+- bootstrap
+  
 
 # Getting Started
 
@@ -35,19 +38,26 @@ Your application should be running on [localhost:3000](http://localhost:3000), o
         L auth
     	    L auth.controller.js
     	L profile.controller.js
+        L referral.controller.js
     L middlewares
     	L auth.js
+        L errormiddleware.js
     L models
     	L referral.js
     	L user.js
     L routes
     	L auth.routes.js
     	L profile.routes.js
+        L referral.routes.js
     L services
     	L referral.service.js
 
     >config
     	L config.js
+        L passportconfig.js
+    >utils
+        L utils.js
+        L validation.js
 
     >public
     >views
@@ -71,7 +81,3 @@ The **app.js** is the entry point of our application.
 
 **Views** contains the rendered data and template for the application frontend.
 
-## Contributing
-
-This is a completely free and open sourced project. Feel free to contribute. :heart:
-Thanks for reading...
