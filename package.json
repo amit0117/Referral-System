@@ -1,5 +1,5 @@
 {
-  "name": " referral-system",
+  "name": "referral-system",
   "version": "1.0.1",
   "description": "A referral system built with nodejs.",
   "main": "app.js",
