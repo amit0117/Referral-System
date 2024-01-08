@@ -3,13 +3,15 @@
   "version": "1.0.1",
   "description": "A referral system built with nodejs.",
   "main": "app.js",
+  "engines":{
+    "node":"14.x"
+  },
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "author": "Bankole Ahmed",
   "license": "ISC",
   "dependencies": {
-    "@hapi/joi": "^17.1.1",
     "bcryptjs": "^2.4.3",
     "connect-flash": "^0.1.1",
     "dotenv": "^16.3.1",
@@ -19,6 +21,7 @@
     "express-handlebars": "^3.0.1",
     "express-session": "^1.17.3",
     "flash": "^1.1.0",
+    "joi": "^17.11.0",
     "jsonwebtoken": "^8.5.1",
     "method-override": "^3.0.0",
     "mongodb": "^6.3.0",
