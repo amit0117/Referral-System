@@ -35,29 +35,29 @@ Your application should be running on [localhost:3000](http://localhost:3000), o
 
     >app
     L controllers
-        L auth
+          L auth
     	    L auth.controller.js
-    	L profile.controller.js
-        L referral.controller.js
+        	L profile.controller.js
+          L referral.controller.js
     L middlewares
-    	L auth.js
-        L errormiddleware.js
+    	    L auth.js
+          L errormiddleware.js
     L models
-    	L referral.js
-    	L user.js
+    	    L referral.js
+    	    L user.js
     L routes
-    	L auth.routes.js
-    	L profile.routes.js
-        L referral.routes.js
+         	L auth.routes.js
+        	L profile.routes.js
+          L referral.routes.js
     L services
-    	L referral.service.js
+    	    L referral.service.js
 
     >config
-    	L config.js
-        L passportconfig.js
+    	    L config.js
+          L passportconfig.js
     >utils
-        L utils.js
-        L validation.js
+          L utils.js
+          L validation.js
 
     >public
     >views
