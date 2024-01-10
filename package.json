@@ -3,19 +3,21 @@
   "version": "1.0.1",
   "description": "A referral system built with nodejs.",
   "main": "app.js",
-  "engines":{
-    "node":"14.x"
+  "engines": {
+    "node": "v21.4.0"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
-  "author": "Bankole Ahmed",
+  "author": "Amit Kumar",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "connect-flash": "^0.1.1",
     "dotenv": "^16.3.1",
     "express": "^4.16.4",
+    "express-async-handler": "^1.2.0",
     "express-fileupload": "^1.1.1-alpha.3",
     "express-flash": "^0.0.2",
     "express-handlebars": "^3.0.1",

@@ -1,4 +1,4 @@
-const Joi = require("@hapi/joi")
+const Joi = require("joi")
 
 const registerValidation =Joi.object({
     fullname: Joi.string().min(6).required(),

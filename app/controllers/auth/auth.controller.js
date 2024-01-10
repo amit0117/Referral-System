@@ -81,8 +81,8 @@ module.exports = {
       req.flash("success", "You are now registered");
       return res.redirect("/api/login");
     } catch (error) {
-      req.flash("error", "An error occurred during registration.");
-      return res.redirect("/api/register");
+    //  throw new Error(error)
+     throw new Error(error)
     }
 
   },

@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const authController = require('../controllers/auth/auth.controller')
 const passport = require('passport')
-
+const asyncHandler=require('express-async-handler')
 router.all('/*', (req, res, next) => {
   req.app.locals.layout = 'default'
   next()
@@ -22,14 +22,14 @@ passport.authenticate('local',{
 
 // Register Rout
 router.get('/register',authController.getRegisterPage)
-router.post('/register',authController.registerUser)
+router.post('/register',asyncHandler(authController.registerUser))
 
 //Logout Route
-router.get('/logout', (req, res) => {
+router.get('/logout', asyncHandler((req, res) => {
   req.logOut()
   req.flash('success', 'Logout was successful')
   res.redirect('/api/login')
-})
+}))
 
 module.exports = router
 

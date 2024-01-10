@@ -74,7 +74,6 @@ app.use(notFound)
 
 //middleware for handling all the intermediate errors
 app.use((err, req, res, next) => {
-  console.log("inr error middleware")
   const { status = 500 } = err
   if (!err) err.message = 'Oops!! Something went wrong ...'
   res.status(status).render('error', { err})
