@@ -23,7 +23,7 @@ This is a simple referral system that makes use of Nodejs to implement a referra
 Overview:
 
 ```shell
-$ git clone https://github.com/geekyahmed/referral-system
+$ git clone https://github.com/amit0117/Referral-System.git
 $ cd referral-system
 $ npm install
 $ npm start
